@@ -19,6 +19,11 @@ function StudentList({ students, onDeleteStudent, onEditStudent }) {
                     .filter((student) => student.name.toLowerCase().includes(search.toLowerCase()))
                     .map((student) => (
                         <div className="student-card" key={student.id}>
+                            <div className="student-avatar" style={{
+                                backgroundColor: ["#2563eb", "#16a34a", "#9333ea", "#ea580c", "#db2777"]
+                                [(student.name || "").trim().charCodeAt(0) % 5]
+                            }}> {(student.name || "?").trim().charAt(0).toUpperCase()}
+                            </div>
                             <div className="student-info">
                                 <div className="info-row">
                                     <span>Name</span>

@@ -70,6 +70,12 @@ Learning Outcomes
 - Conditional rendering
 - Responsive CSS design
 
-Author
+🌐 Deployment
 
-Created as a React practice project.
+Deployed using Vercel.
+
+👨‍💻 Author
+
+Sonu Kumar
+
+Built with React ❤️

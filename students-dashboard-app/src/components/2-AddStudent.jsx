@@ -66,18 +66,29 @@ function AddStudent({ onAddStudent, editingStudent, onUpdateStudent, setEditingS
                     required
                 >
                     <option value="">Select Course</option>
-                    <option value="React">React</option>
-                    <option value="JavaScript">JavaScript</option>
-                    <option value="Node.js">Node.js</option>
-                    <option value="DCA">DCA</option>
-                    <option value="c++">C++</option>
-                    <option value="Python">Python</option>
-                    <option value="Java">Java</option>
-                    <option value="PHP">PHP</option>
-                    <option value="Full Stack Developer ">Full Stack Develover</option>
-                    <option value="Frontend developer">Frontend Developer</option>
-                    <option value="Junior Engineer">Junior Engineer</option>
-                    <option value="Backend developer">Backend Developer</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.E.(Computer Science, AI, Data Science)">B.E.(Computer Science, AI, Data Science)</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="MBBS">MBBS</option>
+                    <option value="BDS">BDS</option>
+                    <option value="BAMS">BAMS</option>
+                    <option value="BHMS">BHMS</option>
+                    <option value="B.Sc.">B.Sc.</option>
+                    <option value="Nursing">Nursing</option>
+                    <option value="Pharmacy (B.Pharm)">Pharmacy (B.Pharm)</option>
+                    <option value="Physiotherapy (BPT)">Physiotherapy (BPT)</option>
+                    <option value="BBA">BBA</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="MBA">MBA</option>
+                    <option value="CA (Chartered Accountancy)">CA (Chartered Accountancy)</option>
+                    <option value="CS (Company Secretary)">CS (Company Secretary)</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="BA (Economics, Psychology, English)">BA (Economics, Psychology, English)</option>
+                    <option value="B.Des (Graphic, UI/UX, Fashion Design)">B.Des (Graphic, UI/UX, Fashion Design)</option>
+                    <option value="Mass Communication">Mass Communication</option>
                 </select>
                 <button type="submit">Add Student</button>
             </form>

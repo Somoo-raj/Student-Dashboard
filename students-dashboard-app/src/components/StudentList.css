@@ -87,19 +87,28 @@
 
 .info-row {
   display: grid;
-  grid-template-columns: 90px 1fr;
+  grid-template-columns: 80px minmax(0, 1fr);
   gap: 10px;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  min-width: 0;
   font-family: Arial;
   font-weight: bold;
   color: #032657;
   border-bottom: 1px solid rgba(0, 0, 0, 0.288);
 }
 
+.info-row span {
+  min-width: 0;
+}
+
 .info-row span:first-child {
   font-weight: 600;
   color: #1e293b;
+}
+
+.info-row span:last-child {
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 600px) {

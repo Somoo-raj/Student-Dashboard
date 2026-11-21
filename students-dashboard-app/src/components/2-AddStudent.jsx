@@ -69,6 +69,15 @@ function AddStudent({ onAddStudent, editingStudent, onUpdateStudent, setEditingS
                     <option value="React">React</option>
                     <option value="JavaScript">JavaScript</option>
                     <option value="Node.js">Node.js</option>
+                    <option value="DCA">DCA</option>
+                    <option value="c++">C++</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Fulstack ">Full Stack Develover</option>
+                    <option value="Frontend developer">Frontend Developer</option>
+                    <option value="junior Engineer">Junior Engineer</option>
+                    <option value="backend developer">Backend Developer</option>
                 </select>
                 <button type="submit">Add Student</button>
             </form>

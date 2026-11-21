@@ -16,7 +16,8 @@
 .student-list h2 {
   text-align: left;
   margin-bottom: 20px;
-  color: #1e293b;
+  color: #3885a3d7;
+  font-weight: bold;
 }
 
 .student-grid {
@@ -53,7 +54,7 @@
 
 .student-actions {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 41px;
   margin-top: 15px;
 }
@@ -67,7 +68,7 @@
 }
 
 .student-info {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .info-row {
@@ -75,8 +76,11 @@
   grid-template-columns: 90px 1fr;
   gap: 10px;
   text-align: left;
-  margin-bottom: 12px;
-  color: #475569;
+  margin-bottom: 10px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #032657;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.288);
 }
 
 .info-row span:first-child {

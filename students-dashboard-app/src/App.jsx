@@ -1,11 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./components/1-Navbar"
 import AddStudent from "./components/2-AddStudent"
 import StudentList from "./components/3-StudentList";
 
 function App() {
-  // Keep the complete student list in the top-level component.
-  const [students, setStudents] = useState([]);
+  // Student State
+  const [students, setStudents] = useState(() => {
+    const savedStudents = localStorage.getItem("students");
+
+    return savedStudents ? JSON.parse(savedStudents) : [];
+  });
+
+  // Track which student, if any, is currently being edited.
+  const [editingStudent, setEditingStudent] = useState(null);
+
+  // useEffect
+  useEffect(() => {
+    localStorage.setItem("students", JSON.stringify(students));
+  }, [students]);
 
   // Add a new student to the list.
   function handleAddStudent(newStudent) {
@@ -18,9 +30,6 @@ function App() {
     setStudents(prev => prev.filter(student => student.id !== id)
     );
   }
-
-  // Track which student, if any, is currently being edited.
-  const [editingStudent, setEditingStudent] = useState(null);
 
   // Set the selected student so the form can display their details.
   function handleEdit(student) {

@@ -86,28 +86,27 @@
 }
 
 .info-row {
-  display: grid;
-  grid-template-columns: 80px minmax(0, 1fr);
-  gap: 10px;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  gap: 12px;
   text-align: left;
   margin-bottom: 12px;
-  min-width: 0;
   font-family: Arial;
   font-weight: bold;
   color: #032657;
   border-bottom: 1px solid rgba(0, 0, 0, 0.288);
 }
 
-.info-row span {
-  min-width: 0;
-}
-
 .info-row span:first-child {
+  flex: 0 0 85px;
   font-weight: 600;
   color: #1e293b;
 }
 
 .info-row span:last-child {
+  flex: 1;
+  min-width: 0;
   overflow-wrap: anywhere;
 }
 

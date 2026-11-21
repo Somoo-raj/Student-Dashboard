@@ -4,7 +4,7 @@ import AddStudent from "./components/2-AddStudent"
 import StudentList from "./components/3-StudentList";
 
 function App() {
-  // Student State
+  // Load saved students once when the app starts; use an empty list if none are saved.
   const [students, setStudents] = useState(() => {
     const savedStudents = localStorage.getItem("students");
 
@@ -14,7 +14,7 @@ function App() {
   // Track which student, if any, is currently being edited.
   const [editingStudent, setEditingStudent] = useState(null);
 
-  // useEffect
+  // Keep the saved student list in sync whenever its state changes.
   useEffect(() => {
     localStorage.setItem("students", JSON.stringify(students));
   }, [students]);

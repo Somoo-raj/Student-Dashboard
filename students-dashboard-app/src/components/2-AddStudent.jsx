@@ -2,20 +2,24 @@ import { useState, useEffect } from "react"
 import "./AddStudent.css"
 
 function AddStudent({ onAddStudent, editingStudent, onUpdateStudent, setEditingStudent }) {
+    // Default values keep the form ready for adding a new student.
     const initialFormData = {
         name: "",
         email: "",
         course: ""
     };
 
+    // Stores the current values entered in the form.
     const [formData, setFormData] = useState(initialFormData)
 
+    // Fill the form with the selected student's details when editing.
     useEffect(() => {
         if (editingStudent) {
             setFormData(editingStudent);
         }
     }, [editingStudent]);
 
+    // Update the matching form field whenever the user types or selects a value.
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({
@@ -24,6 +28,7 @@ function AddStudent({ onAddStudent, editingStudent, onUpdateStudent, setEditingS
         }));
     };
 
+    // Submit the form to add a new student or save edits to an existing one.
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -39,6 +44,7 @@ function AddStudent({ onAddStudent, editingStudent, onUpdateStudent, setEditingS
         setEditingStudent(null);
     };
 
+    // Render the student form and available course choices.
     return (
         <div className="add-student">
             <h2>Add Student</h2>

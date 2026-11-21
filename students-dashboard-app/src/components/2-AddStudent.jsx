@@ -74,10 +74,10 @@ function AddStudent({ onAddStudent, editingStudent, onUpdateStudent, setEditingS
                     <option value="Python">Python</option>
                     <option value="Java">Java</option>
                     <option value="PHP">PHP</option>
-                    <option value="Fulstack ">Full Stack Develover</option>
+                    <option value="Full Stack Developer ">Full Stack Develover</option>
                     <option value="Frontend developer">Frontend Developer</option>
-                    <option value="junior Engineer">Junior Engineer</option>
-                    <option value="backend developer">Backend Developer</option>
+                    <option value="Junior Engineer">Junior Engineer</option>
+                    <option value="Backend developer">Backend Developer</option>
                 </select>
                 <button type="submit">Add Student</button>
             </form>

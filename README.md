@@ -2,6 +2,10 @@ Student Management System
 
 A React-based Student Management System that allows users to manage student records with an interactive and responsive interface.
 
+🚀 Live Demo
+
+"Visit RecipeCart" (https://react-recipe-cart.vercel.app)
+
 Features
 
 - Add new students

@@ -4,7 +4,7 @@ A React-based Student Management System that allows users to manage student reco
 
 🚀 Live Demo
 
-"Visit RecipeCart" (https://react-recipe-cart.vercel.app)
+"Visit RecipeCart" (https://student-dashboard-delta-ashen.vercel.app/)
 
 Features
 

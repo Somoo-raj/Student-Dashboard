@@ -1,8 +1,4 @@
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom"
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import StudentDetails from "./Pages/StudentDetails";
 import Navbar from "./components/1-Navbar"
 import AddStudent from "./components/2-AddStudent"
 import StudentList from "./components/3-StudentList";
@@ -50,27 +46,17 @@ function App() {
     <>
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Home />
-            {/* Pass state and handlers to child components through props. */}
-            <AddStudent
-              onAddStudent={handleAddStudent}
-              editingStudent={editingStudent}
-              onUpdateStudent={handleUpdateStudent}
-              setEditingStudent={setEditingStudent} />
-            <StudentList
-              students={students}
-              onDeleteStudent={handleDeleteStudent}
-              onEditStudent={handleEdit}
-            />
-          </>
-        }
-        />
-        <Route path="/students/:id" element={<StudentDetails studentsArray={students} />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      {/* Pass state and handlers to child components through props. */}
+      <AddStudent
+        onAddStudent={handleAddStudent}
+        editingStudent={editingStudent}
+        onUpdateStudent={handleUpdateStudent}
+        setEditingStudent={setEditingStudent} />
+      <StudentList
+        students={students}
+        onDeleteStudent={handleDeleteStudent}
+        onEditStudent={handleEdit}
+      />
     </>
   )
 }
